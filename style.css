@@ -1,0 +1,72 @@
+body{
+    background-color: rgba(235, 243, 86, 0.637);
+}
+
+.name {
+    margin: 0 auto; /* Align the name horizontally to the center */
+    display: block; /* Ensure it behaves as a block-level element */
+    width: fit-content; /* Adjust the width as needed */
+    text-align: center; /* Center the text inside the .name container */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img {
+    border-radius: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto; /* Align the image horizontally to the center */
+    transition: all 0.3s ease;
+}
+
+.img:hover{
+    transform: translateY(-5px);
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    .summary, .experience, .education, .skills, .projects, .additional-info {
+        margin-bottom: 30px;
+    }
+    
+    .summary p, .experience p, .education p, .skills p, .projects p, .additional-info p {
+        margin: 0;
+        line-height: 1.6;
+    }
+    
+    .summary h2, .experience h2, .education h2, .skills h2, .projects h2, .additional-info h2 {
+        color: #333;
+    }
+    
+    .summary p, .experience p, .education p, .skills p, .projects p, .additional-info p {
+        color: #555;
+    }
+    
